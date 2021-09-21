@@ -1,0 +1,323 @@
+:root {
+    --red: #e50914;
+    --white: #ffffff;
+    --blue: #0071EB;
+    --font-size-h1: 70px;
+    --font-size-h2: 26px;
+    --font-size-h3: 20px;
+
+    --gray-bg: #333333;
+    --text-gray: #757575;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: normal;
+    color: var(--white);
+}
+
+html, 
+body {
+    background-color: black;
+}
+input {
+    border: none;
+    border-radius: 0.25em;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* Header start */
+.content {
+    background: linear-gradient(#0000009f, #00000066, #0000009f), url(./images/Section1-background-large.jpg) no-repeat;
+
+    height: 150%;
+}
+
+#netflix-icon {
+    width: 180px;
+    height: 42px;
+    fill: var(--red);
+    margin-top: 2.5em;
+    margin-left: 2.5em;
+    margin-bottom: 1em;
+}
+
+/* Header end */
+
+/* Body start */
+/* .body-container {
+} */
+.body {
+    width: 450px;
+    height: 645px;
+    padding: 60px 68px 40px;
+    background-color: #000000BF;
+    margin: 0 auto;
+    margin-bottom: 5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    
+}
+
+.body h1 {
+    font-size: 32px;
+    margin-bottom: 0.75em;
+}
+.body input {
+    width: 314px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 1.25em;
+    margin-bottom: 1em;
+    background-color: var(--gray-bg);
+}
+.body .button {
+    background-color: var(--red);
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+.checkbox {
+    display: flex;
+    font-size: 13px;
+}
+.checkbox input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+.body div {
+    color: var(--text-gray);
+}
+.sign-up {
+    margin-top: 5em;
+    font-size: 16px;
+}
+.captcha {
+    margin-top: 1em;
+    font-size: 13px;
+}
+.sign-up a:hover, .captcha a:hover {
+    text-decoration: underline;
+}
+.captcha a {
+    color: var(--blue);
+}
+/* Body end */
+
+/* Footer start */
+footer {
+    padding: 3em 5em;
+    background-color: #000000BF;    
+}
+
+.footer-title, .footer-title-link {
+    color: var(--text-gray);
+}
+
+.footer-title {
+    margin-bottom: 2em;
+}
+
+.footer-title-link:hover {
+    text-decoration: underline;
+}
+
+.footer-links-container {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+}
+
+.footer-links-container * {
+    text-align: left;
+    color: var(--text-gray);
+}
+
+.footer-body {
+    width: 80%;
+    
+    min-width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-item {
+    margin-bottom: 1em;
+    padding-right: 0.75em;
+}
+.footer-list-item:hover {
+    text-decoration: underline;
+}
+/* Footer end */
+
+/* Media queries start */
+@media (max-width: 949px) {  
+    /* Footer start */
+    footer {
+        margin-top: 0.5em;
+        padding: 3em 5em;
+        background-color: black;    
+    }
+
+    .footer-title {
+        margin-bottom: 1.5em;
+    }
+
+    .footer-body {
+        justify-content: space-between;
+    }
+
+    .footer-list-item {
+        margin-bottom: 1em;
+        padding-right: 0.75em;
+    }
+    /* Footer end */
+}
+
+/* Media Queries end */
+@media (max-width: 740px) {
+    /* Header start */
+    body {
+        background: black;
+    }
+    .content {
+        background: black;
+        height: 100%;
+    }
+
+    #netflix-icon {
+        width: 166px;
+        height: 45px;
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-bottom: 2.5em;
+    }
+
+    /* Header end */
+
+    /* Body start */
+    /* .body-container {
+    } */
+    .body {
+        width: 90%;
+        height: 600px;
+        padding: 0;
+        background-color: #000000BF;
+        margin: 0 auto;
+        margin-bottom: 5em;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .body h1 {
+        font-size: 32px;
+        margin-bottom: 0.75em;
+    }
+    .body input {
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+        padding-left: 1.25em;
+        margin-bottom: 1em;
+        background-color: var(--gray-bg);
+    }
+    .body .button {
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .checkbox {
+        display: flex;
+        font-size: 13px;
+    }
+    .checkbox input {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .body div {
+        color: var(--text-gray);
+    }
+    .sign-up {
+        margin-top: 5em;
+        font-size: 16px;
+    }
+    .captcha {
+        margin-top: 1em;
+        font-size: 13px;
+    }
+    .sign-up a:hover, .captcha a:hover {
+        text-decoration: underline;
+    }
+    .captcha a {
+        color: var(--blue);
+    }
+    /* Body end */    
+}
+@media (max-width:706px) {
+    .footer-body {
+        width: 80%;
+        
+        min-width: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width:514px) {
+    
+    .content {
+        height: 150%;
+    }
+    #netflix-icon {
+        width: 76px;
+        height: 25px;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    .body {
+        margin-bottom: 1em;
+        height: 500px;
+    }
+    /* Footer start */
+    footer {
+        margin-top: 0.5em;
+        padding: 3em 0.5em;
+        background-color: black;    
+    }
+
+    .footer-title {
+        margin-bottom: 1.5em;
+    }
+
+    .footer-body {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer-list-item {
+        margin-bottom: 1em;
+        padding-right: 0.75em;
+    }
+    /* Footer end */
+
+}
+/* Media queries end */
